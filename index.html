@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="search__window">
+        <div class="search__box">
+            <input type="text" id="city-input" placeholder="Введите город" class="hidden">
+            <button class="search__button fa__magnifying__glass">
+                <img src="svg/search.svg" alt="Найти">
+            </button>
+        </div>
+    </div> 
+    <div class="error">
+        <p>Неизвестное имя города</p>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <div class="header__location">
+                    <div class="choose__location">
+                        <span class="city">London, GB</span>
+                        <p class="date">Сегодня, 26 февраля 2025</p>
+                    </div>
+                    <div class="search-container">
+                        <img src="svg/Plus.svg" class="custom-plus"></div>
+                    </div>
+                
+                <div class="wheather__today">
+                    <div class="today__degree">
+                        <span class="degree">20 &#8451</span>
+                        <p class="weather__conditions">Облачно</p>
+                    </div>               
+                    <img class="img__today" src="./img/cloudly.png" alt="Облачно">
+                </div>
+            </div>
+        </div>
+        <div class="wheather__details">
+            <div class="container">
+                <h1>Подробный прогноз</h1>
+                <div class="weather__blocks">
+                    <div class="datail__block">
+                            <span class="datail__name">Ощущается как</span>
+                            <span class="datail__value feels__like__value">Неизвестно</span>
+                    </div>
+                    <div class="datail__block">
+                        <span class="datail__name">Влажность</span>
+                        <span class="datail__value humidity__value">Неизвестно</span>
+                    </div>
+                    <div class="datail__block">
+                        <span class="datail__name">Максимальная температура</span>
+                        <span class="datail__value temp__max__value">Неизвестно</span>
+                    </div>
+                    <div class="datail__block">
+                        <span class="datail__name">Минимальная температура</span>
+                        <span class="datail__value temp__min__value">Неизвестно</span>
+                    </div>
+                    <div class="datail__block">
+                        <span class="datail__name">Скорость ветра</span>
+                        <span class="datail__value wind__speed__value">Неизвестно</span>
+                    </div>
+                    <!-- <div class="day saturday">
+                        <span class="day__name">сб</span>
+                        <img src="svg/storm.svg" alt="погода в понедельник" class="day__picture">
+                        <span class="day__degree">5°С</span>
+                    </div>
+                    <div class="day sanday">
+                        <span class="day__name">вс</span>
+                        <img src="svg/storm.svg" alt="погода в понедельник" class="day__picture">
+                        <span class="day__degree">5°С</span>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
